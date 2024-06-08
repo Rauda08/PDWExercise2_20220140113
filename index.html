@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Cake Lezat</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style\styles.css">
+
+    <style>
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+
+        #about .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .jumbotron {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            padding: 2rem; 
+            margin-top: 1rem; 
+            text-align: left;
+        }
+        .jumbotron h1 {
+            color: #926a86; 
+            font-size: xx-large;
+            font-style: italic;
+            font-weight: bold;
+            justify-content: left;
+            
+        }
+        .jumbotron p {
+            color: #555;
+            font-size: larger;
+            justify-content: left;
+        }
+        .jumbotron img {
+            max-width: 300px; 
+            height: auto; 
+            margin-left: 2rem; 
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="assets\logo.jpg" width="70">
+        <a class="navbar-brand" href="#">Toko Cake Lezat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#order">order now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="jumbotron text-center">
+        <div>
+            <h1 class="display-4">Selamat Datang di Toko Cake Lezat</h1>
+            <p class="lead">Tempat terbaik untuk menikmati berbagai macam cake yang lezat dan menggugah selera.</p>
+        </div>
+        <img src="assets\dashboard.jpg" alt="Cake Image">
+    </header>
+
+    <!-- Tentang Kami -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center">Tentang Kami</h2>
+        <p class="text-center">Toko Cake Lezat berdiri sejak tahun 2021 dengan tujuan memberikan pengalaman menikmati cake yang terbaik bagi pelanggan kami. Kami menggunakan bahan-bahan berkualitas tinggi dan resep rahasia untuk menciptakan cake yang sempurna.</p>
+        <div class="row">
+            <div class="col-4">
+                <img src="assets/cake1.jpg" class="img-fluid" alt="Cake 1">
+            </div>
+            <div class="col-4">
+                <img src="assets/cake2.jpg" class="img-fluid" alt="Cake 2">
+            </div>
+            <div class="col-4">
+                <img src="assets/cake3.jpg" class="img-fluid" alt="Cake 3">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Menu Section -->
+    <section id="menu" class="container my-5">
+        <h2 class="text-center">Menu Kami</h2>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Kue Coklat
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Kue coklat kami terbuat dari coklat berkualitas tinggi dan cocok untuk segala acara.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Kue Keju
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Kue keju kami terkenal dengan rasa keju yang lembut dan gurih.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Kue Stroberi
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Kue stroberi kami dibuat dari stroberi segar yang memberikan rasa manis dan asam yang sempurna.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Pembelian -->
+    <section id="order" class="container my-5">
+        <h2 class="text-center">Formulir Pemesanan Cake</h2>
+        <form>
+            <div class="form-container">
+                <form id="FormPembelian">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+        
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="alamat">Alamat</label>
+                    <input type="text" id="alamat" name="alamat" required>
+                        
+                    <label for="varianType">Varian Cake:</label>
+                    <select id="varianType" name="varianType" required>
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Cokelat">Chocolate</option>
+                        <option value="Strawberry">Strawberry</option>
+                    </select>
+        
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="dataValidation" required>
+                        <label class="checkbox-label" for="dataValidation">I confirm that the information provided is correct.</label>
+                    </div>
+            <button type="submit" class="btn btn-primary">Order Now</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; selamat menikmati cake yang lezat dan manis</p>
+    </footer>
+    <script src="javascript\javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
